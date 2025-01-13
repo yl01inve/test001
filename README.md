@@ -17,7 +17,7 @@ This is a DOS implementation version of llama2.c for inference. The main authors
 
 When using the **DJGPP** compiler, sometimes compilation fails to work properly in the **DOSBox** environment. This issue can be solved by modifying the **DOSBox** configuration file.
 
-#### 解决方法 / Solution:
+解决方法 / Solution:
 
 1. 打开 **DOSBox** 配置文件 `~/.dosbox/dosbox.conf`。  
    Open the **DOSBox** configuration file `~/.dosbox/dosbox.conf`.
