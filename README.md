@@ -12,25 +12,8 @@ This is a DOS implementation version of llama2.c for inference. The main authors
 
 ## 疑難排解(Troubleshooting)
 ### 1. DJGPP 在 DOSBox 下无法编译的问题 / DJGPP Compilation Issue in DOSBox
+請注意，由於 DJGPP 編譯器可能存在某些未知的問題（可能是 bug），當你在 **DOSBox** 環境下使用 **DJGPP** 編譯程式碼時，請務必確保 **檔案名使用小寫字母**。  
+Please note that due to some unknown issues (possibly a bug) with the DJGPP compiler, when using **DJGPP** in a **DOSBox** environment, make sure the **file names are in lowercase**.
 
-在使用 **DJGPP** 编译器时，有时会遇到无法在 **DOSBox** 环境中正常编译的情况。此时，可以通过修改 **DOSBox** 配置文件来解决该问题。当使用 **DJGPP** 编译器时，可能会遇到无法正常在 **DOSBox** 环境中编译的问题。这个问题可以通过修改 **DOSBox** 配置文件来解决。
-
-When using the **DJGPP** compiler, sometimes compilation fails to work properly in the **DOSBox** environment. This issue can be solved by modifying the **DOSBox** configuration file.
-
-解决方法 / Solution:
-
-1. 打开 **DOSBox** 配置文件 `~/.dosbox/dosbox.conf`。  
-   Open the **DOSBox** configuration file `~/.dosbox/dosbox.conf`.
-
-2. 在 `[dos]` 部分加入 `longnames=true`。  
-   Add `longnames=true` under the `[dos]` section.
-   
-3. 在 `[autoexec]` 部分加入 `set dos=lfn`。  
-   Add `set dos=lfn` under the `[autoexec]` section.
-   
-4. 保存文件并重新启动 **DOSBox**。  
-Save the file and restart **DOSBox**.
-
-完成上述设置后，**DJGPP** 编译器应该能够在 **DOSBox** 中正常工作，且能够支持长文件名（LFN）。
-
-After completing the above steps, the **DJGPP** compiler should work properly in **DOSBox**, and long file names (LFN) will be supported.
+這是因為在某些情況下，DJGPP 可能會無法正確識別包含大寫字母的檔案名稱，導致編譯失敗或錯誤。  
+This is because, in some cases, DJGPP may fail to correctly recognize file names with uppercase letters, causing compilation failures or errors.
