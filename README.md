@@ -7,7 +7,16 @@
 [DEMO](https://yl01inve.github.io/test001/demo/)
 
 This is a DOS implementation version of llama2.c for inference. The main authors are various LLM models. The uploader modified it to run properly on DOS and added a [DEMO](https://yl01inve.github.io/test001/demo/).
-## ch1
+### 1. 編譯檔案 (Compiling the files)
+請把你要編譯的檔案名稱改名為 `run.c`。  
+Rename the file you want to compile to `run.c`.
+c89 version:
+gcc -std=c89 run.c -o run.exe
+c99 version:
+gcc -std=c99 -lm run.c -o run.exe
+execute:
+run f260k.bin -t 0.8 -n 256 -i "One day, Lily met a Shoggoth"
+
  
 
 ## 疑難排解(Troubleshooting)
