@@ -15,8 +15,19 @@ c89 version:
 gcc -std=c89 run.c -o run.exe   
 c99 version:    
 gcc -std=c99 -lm run.c -o run.exe   
-execute:   
-run f260k.bin -t 0.8 -n 256 -i "One day, Lily met a Shoggoth"    
+
+### 1. 執行 (execute)       
+請前往以下連結下載所需檔案：       
+Go to the following link to download the required files:       
+[karpathy/tinyllamas](https://huggingface.co/karpathy/tinyllamas/tree/main/stories260K)       
+下載後，請將以下檔案重新命名並放置在與執行檔相同的目錄下：       
+After downloading, rename the following files and place them in the same directory as the executable:       
+stories260K.bin 改名為 f260k.bin       
+Rename stories260K.bin to f260k.bin       
+tok512.bin 改名為 token.bin       
+Rename tok512.bin to token.bin       
+       
+c:\run f260k.bin -t 0.8 -n 256 -i "One day, Lily met a Shoggoth"         
 
 
 ## 疑難排解(Troubleshooting)
